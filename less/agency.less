@@ -16,6 +16,11 @@ body {
 	color: @theme-primary;
 }
 
+.shift-up {
+	position: relative;
+	top: -20px;
+}
+
 p {
 	font-size: 14px;
 	line-height: 1.75;
@@ -346,6 +351,10 @@ section {
 	color: @theme-danger;
 }
 
+.blue {
+	color: @gray;
+}
+
 #about {
 	h3, .subheading {
 		color: @theme-danger;
@@ -544,6 +553,10 @@ section {
 	}
 }
 
+.row {
+	clear:both;
+}
+
 // Team Section
 section#team {
 	.blue-people {
@@ -556,12 +569,22 @@ section#team {
 
 	}
 
+	.ensure-height {
+		h4 {
+			min-height: 40px;
+		}
+	}
+
+	.ensure-height-single {
+		min-height: 40px;
+	}
+
 	.red-people {
 		img {
 			border: 7px solid @theme-primary;
 		}
 		.text-muted {
-			color: @theme-primary;
+			color: @gray;
 		}
 	}
 
@@ -570,15 +593,17 @@ section#team {
 	}
 
 	.team-member {
+		margin-left: 10px;
+		margin-right: 10px;
 		text-align: center;
-		margin-bottom: 50px;
+		margin-bottom: 30px;
 		img {
 			margin: 0 auto;
 		}
 
 
 		h4 {
-			margin-top: 25px;
+			margin-top: 10px;
 			margin-bottom: 0;
 			text-transform: none;
 		}
@@ -617,21 +642,21 @@ section#media {
 
 ::-moz-selection {
     text-shadow: none;
-    background: @theme-primary;
+    background: rgba(227, 40, 40, 0.5);
 }
 
 ::selection {
     text-shadow: none;
-    background: @theme-primary;
+    background: rgba(227, 40, 40, 0.5);
 }
 
-img::selection {
-    background: transparent;
-}
-
-img::-moz-selection {
-    background: transparent;
-}
+// img::selection {
+//     background: transparent;
+// }
+//
+// img::-moz-selection {
+//     background: transparent;
+// }
 
 body {
     webkit-tap-highlight-color: @theme-primary;

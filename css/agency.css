@@ -13,6 +13,10 @@ body {
 .text-primary {
   color: #e32828;
 }
+.shift-up {
+  position: relative;
+  top: -20px;
+}
 p {
   font-size: 14px;
   line-height: 1.75;
@@ -386,6 +390,9 @@ section h3.section-subheading {
 .red {
   color: #e74c3c;
 }
+.blue {
+  color: #0000cd;
+}
 #about h3,
 #about .subheading {
   color: #e74c3c;
@@ -560,30 +567,41 @@ section h3.section-subheading {
     padding: 0 100px 20px 20px;
   }
 }
+.row {
+  clear: both;
+}
 section#team .blue-people img {
   border: 7px solid #0000cd;
 }
 section#team .blue-people .text-muted {
   color: #0000cd;
 }
+section#team .ensure-height h4 {
+  min-height: 40px;
+}
+section#team .ensure-height-single {
+  min-height: 40px;
+}
 section#team .red-people img {
   border: 7px solid #e32828;
 }
 section#team .red-people .text-muted {
-  color: #e32828;
+  color: #0000cd;
 }
 section#team .section-heading {
   margin-bottom: 50px;
 }
 section#team .team-member {
+  margin-left: 10px;
+  margin-right: 10px;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 section#team .team-member img {
   margin: 0 auto;
 }
 section#team .team-member h4 {
-  margin-top: 25px;
+  margin-top: 10px;
   margin-bottom: 0;
   text-transform: none;
 }
@@ -610,17 +628,11 @@ section#media .section-heading {
 }
 ::-moz-selection {
   text-shadow: none;
-  background: #e32828;
+  background: rgba(227, 40, 40, 0.5);
 }
 ::selection {
   text-shadow: none;
-  background: #e32828;
-}
-img::selection {
-  background: transparent;
-}
-img::-moz-selection {
-  background: transparent;
+  background: rgba(227, 40, 40, 0.5);
 }
 body {
   webkit-tap-highlight-color: #e32828;
