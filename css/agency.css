@@ -571,7 +571,7 @@ section h3.section-subheading {
   clear: both;
 }
 section#team .blue-people img {
-  border: 7px solid #0000cd;
+  border: 5px solid #0000cd;
 }
 section#team .blue-people .text-muted {
   color: #0000cd;
@@ -580,10 +580,10 @@ section#team .ensure-height h4 {
   min-height: 40px;
 }
 section#team .ensure-height-single {
-  min-height: 40px;
+  min-height: 80px;
 }
 section#team .red-people img {
-  border: 7px solid #e32828;
+  border: 5px solid #e32828;
 }
 section#team .red-people .text-muted {
   color: #0000cd;
@@ -599,6 +599,7 @@ section#team .team-member {
 }
 section#team .team-member img {
   margin: 0 auto;
+  min-width: 75px;
 }
 section#team .team-member h4 {
   margin-top: 10px;
