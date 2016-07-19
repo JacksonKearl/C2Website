@@ -5,7 +5,13 @@ body {
 }
 body {
   overflow-x: hidden;
+  background-image: url('/img/background-light copy.png');
+  background-size: contain;
+  background-position: 50% 5px;
   font-family: 'Open Sans', "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.body-white {
+  background-color: white;
 }
 .text-muted {
   color: #1111ff;
