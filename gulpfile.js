@@ -9,13 +9,7 @@ var uglify = require('gulp-uglify');
 var pkg = require('./package.json');
 
 // Set the banner content
-var banner = ['/*!\n',
-    ' * Start Bootstrap - <%= pkg.title %> v<%= pkg.version %> (<%= pkg.homepage %>)\n',
-    ' * Copyright 2013-' + (new Date()).getFullYear(), ' <%= pkg.author %>\n',
-    ' * Licensed under <%= pkg.license.type %> (<%= pkg.license.url %>)\n',
-    ' */\n',
-    ''
-].join('');
+var banner = '';
 
 // Default task
 gulp.task('default', ['less', 'minify-css', 'minify-js', 'copy']);
