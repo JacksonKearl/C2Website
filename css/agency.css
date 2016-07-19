@@ -3,12 +3,20 @@ body {
   max-width: 100%;
   overflow-x: hidden;
 }
+h4 {
+  color: #000067;
+}
 body {
   overflow-x: hidden;
-  background-image: url('/img/background-light copy.png');
+  background-image: url('/img/background.png');
   background-size: contain;
   background-position: 50% 5px;
   font-family: 'Open Sans', "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+@media (max-width: 900px) {
+  body {
+    background-image: url('/img/background-small.png');
+  }
 }
 .body-white {
   background-color: white;
@@ -17,7 +25,7 @@ body {
   color: #1111ff;
 }
 .text-primary {
-  color: #e32828;
+  color: #e74c3c;
 }
 .shift-up {
   position: relative;
@@ -38,13 +46,13 @@ a.active {
   outline: none;
 }
 a {
-  color: #e32828;
+  color: #e74c3c;
 }
 a:hover,
 a:focus,
 a:active,
 a.active {
-  color: #bf1919;
+  color: #d62c1a;
 }
 h1,
 h2,
@@ -68,8 +76,8 @@ h6 {
 }
 .btn-primary {
   color: white;
-  background-color: #e32828;
-  border-color: #e32828;
+  background-color: #e74c3c;
+  border-color: #e74c3c;
   font-family: 'Open Sans', "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   text-transform: uppercase;
@@ -81,8 +89,8 @@ h6 {
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
   color: white;
-  background-color: #bf1919;
-  border-color: #b61818;
+  background-color: #d62c1a;
+  border-color: #cd2a19;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -104,11 +112,11 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-  background-color: #e32828;
-  border-color: #e32828;
+  background-color: #e74c3c;
+  border-color: #e74c3c;
 }
 .btn-primary .badge {
-  color: #e32828;
+  color: #e74c3c;
   background-color: white;
 }
 .btn-xl {
@@ -167,21 +175,21 @@ fieldset[disabled] .btn-xl.active {
   border-color: transparent;
 }
 .navbar-custom .navbar-brand {
-  color: #e32828;
+  color: #e74c3c;
   font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
 }
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus,
 .navbar-custom .navbar-brand:active,
 .navbar-custom .navbar-brand.active {
-  color: #bf1919;
+  color: #d62c1a;
 }
 .navbar-custom .navbar-collapse {
   border-color: rgba(255, 255, 255, 0.02);
 }
 .navbar-custom .navbar-toggle {
-  background-color: #e32828;
-  border-color: #e32828;
+  background-color: #e74c3c;
+  border-color: #e74c3c;
   font-family: 'Open Sans', "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   text-transform: uppercase;
@@ -190,7 +198,7 @@ fieldset[disabled] .btn-xl.active {
 }
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
-  background-color: #e32828;
+  background-color: #e74c3c;
 }
 .navbar-custom .nav li a {
   font-family: 'Open Sans', "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -208,12 +216,12 @@ fieldset[disabled] .btn-xl.active {
 .navbar-custom .navbar-nav > .active > a {
   border-radius: 0;
   color: white;
-  background-color: #e32828;
+  background-color: #e74c3c;
 }
 .navbar-custom .navbar-nav > .active > a:hover,
 .navbar-custom .navbar-nav > .active > a:focus {
   color: white;
-  background-color: #bf1919;
+  background-color: #d62c1a;
 }
 @media (min-width: 768px) {
   .navbar-custom {
@@ -330,7 +338,7 @@ section h3.section-subheading {
   margin: 0 auto;
 }
 #events .portfolio-item .portfolio-link .portfolio-hover {
-  background: rgba(227, 40, 40, 0.1);
+  background: rgba(231, 76, 60, 0.1);
   cursor: default;
   position: absolute;
   width: 100%;
@@ -467,6 +475,7 @@ section h3.section-subheading {
   font-size: 10px;
   margin-top: 20px;
   line-height: 14px;
+  color: white;
 }
 .timeline > li.timeline-inverted > .timeline-panel {
   float: right;
@@ -490,7 +499,6 @@ section h3.section-subheading {
 }
 .timeline .timeline-heading h4 {
   margin-top: 0;
-  color: inherit;
 }
 .timeline .timeline-heading h4.subheading {
   text-transform: none;
@@ -589,7 +597,7 @@ section#team .ensure-height-single {
   min-height: 80px;
 }
 section#team .red-people img {
-  border: 5px solid #e32828;
+  border: 5px solid #e74c3c;
 }
 section#team .red-people .text-muted {
   color: #0000cd;
@@ -642,5 +650,5 @@ section#media .section-heading {
   background: rgba(227, 40, 40, 0.5);
 }
 body {
-  webkit-tap-highlight-color: #e32828;
+  webkit-tap-highlight-color: #e74c3c;
 }

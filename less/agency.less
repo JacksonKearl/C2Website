@@ -7,14 +7,25 @@ html, body {
     overflow-x: hidden;
 }
 
+h4 {
+	color: @gray-darker;
+}
 
 body {
 	overflow-x: hidden;
-	background-image :url('/img/background-light copy.png');
+	background-image :url('/img/background.png');
 	background-size: contain;
 	background-position: 50% 5px;
 	.body-font;
 }
+
+@media(max-width:900px){
+	body{
+		background-image: url('/img/background-small.png');
+	}
+}
+
+
 
 .body-white {
 	background-color: white;
@@ -134,10 +145,10 @@ h1, h2, h3, h4, h5, h6 {
     			.heading-font;
     			font-weight: 700;
     			letter-spacing: 1px;
-    			color: @theme-danger;
+    			color: @theme-primary;
     			&:hover,
     			&:focus {
-    				color: @theme-danger;
+    				color: @theme-primary;
     				outline: none;
     			}
     		}
@@ -327,7 +338,7 @@ section {
 			h5 {
 				margin-top: -1px;
 				margin-bottom: 0px;
-				color: @theme-danger;
+				color: @theme-primary;
 			}
 
         	p {
@@ -360,7 +371,7 @@ section {
 }
 
 .red {
-	color: @theme-danger;
+	color: @theme-primary;
 }
 
 .blue {
@@ -369,7 +380,7 @@ section {
 
 #about {
 	h3, .subheading {
-		color: @theme-danger;
+		color: @theme-primary;
 	}
 
 	.who-we-are-summary {
@@ -391,7 +402,7 @@ section {
         position: absolute;
         content: "";
         width: 10px;
-        background-color:@theme-danger;// #f1f1f1;
+        background-color:@theme-primary;// #f1f1f1;
         left: 47px;
         margin-left: -1.5px;
     }
@@ -433,15 +444,16 @@ section {
 	        height: 100px;
             position: absolute;
             z-index: 100;
-            background-color: @theme-danger;
+            background-color: @theme-primary;
             color: white;
             border-radius: 100%;
-            border: 7px solid @theme-danger;//#f1f1f1;
+            border: 7px solid @theme-primary;//#f1f1f1;
             text-align: center;
             h4 {
             	font-size: 10px;
             	margin-top: 20px;
             	line-height: 14px;
+				color: white;
             }
         }
         &.timeline-inverted > .timeline-panel {
@@ -468,7 +480,6 @@ section {
 	.timeline-heading {
 		h4 {
 		    margin-top: 0;
-		    color: inherit;
 		    &.subheading {
 		    	text-transform: none;
 		    }
@@ -639,7 +650,7 @@ section#media {
 		color: white;
 	}
 	.section-heading {
-		color: @theme-danger;
+		color: @theme-primary;
 	}
 }
 
