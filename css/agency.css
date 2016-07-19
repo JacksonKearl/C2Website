@@ -297,7 +297,8 @@ section h2.section-heading {
 section h3.section-subheading {
   font-size: 20px;
   text-transform: none;
-  margin-bottom: 75px;
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
 @media (min-width: 768px) {
   section {
@@ -384,15 +385,12 @@ section h3.section-subheading {
 .section-heading {
   color: #000088;
 }
+.red {
+  color: #e74c3c;
+}
 #about h3,
 #about .subheading {
   color: #e74c3c;
-}
-#about #who-we-are-summary {
-  margin-top: -80px;
-  margin-bottom: 40px;
-  font-size: 18px;
-  color: #0000cd;
 }
 .timeline {
   list-style: none;
