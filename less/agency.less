@@ -182,7 +182,6 @@ header {
 		padding-top: 100px;
 		padding-bottom: 50px;
 		.intro-lead-in {
-			font-style: italic;
 			font-size: 22px;
 			line-height: 22px;
 			margin-bottom: 25px;
@@ -190,7 +189,8 @@ header {
 		}
 		.intro-heading {
 			.heading-font;
-			font-weight: 700;
+			font-style: normal;
+			//font-weight: 700;
 			font-size: 50px;
 			line-height: 50px;
 			margin-bottom: 25px;
@@ -204,14 +204,14 @@ header {
 			padding-top: 300px;
 			padding-bottom: 200px;
 			.intro-lead-in {
-				font-style: italic;
+				font-style: normal;
 				font-size: 40px;
 				line-height: 40px;
 				margin-bottom: 25px;
 			}
 			.intro-heading {
 				.heading-font;
-				font-weight: 700;
+				//font-weight: 700;
 				font-size: 75px;
 				line-height: 75px;
 				margin-bottom: 50px;
@@ -546,20 +546,22 @@ section {
 
 // Team Section
 section#team {
-
-	.text-muted {
-		color: @theme-primary;
-	}
-
-	.parents {
+	.blue-people {
 		img {
 			border: 7px solid @gray;
 		}
+		.text-muted {
+			color: @gray;
+		}
+
 	}
 
-	.chairs {
+	.red-people {
 		img {
 			border: 7px solid @theme-primary;
+		}
+		.text-muted {
+			color: @theme-primary;
 		}
 	}
 
