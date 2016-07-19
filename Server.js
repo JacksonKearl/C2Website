@@ -26,6 +26,7 @@ http.createServer(function(request, response) {
         response.end();
         return;
       }
+      var maxAge = 24*60*60
       if (!response.getHeader('Cache-Control')) response.setHeader('Cache-Control', 'public, max-age=' + (maxAge / 1000));
 
       response.writeHead(200);
