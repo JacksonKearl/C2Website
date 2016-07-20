@@ -10,13 +10,9 @@ body {
   overflow-x: hidden;
   background-image: url('/img/background.png');
   background-size: contain;
-  background-position: 50% 5px;
+  background-attachment: fixed;
+  background-position: 50% -5px;
   font-family: 'Open Sans', "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-@media (max-width: 900px) {
-  body {
-    background-image: url('/img/background-small.png') !important;
-  }
 }
 .body-white {
   background-color: white;
