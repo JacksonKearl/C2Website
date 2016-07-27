@@ -3,6 +3,10 @@
 (function($) {
     "use strict"; // Start of use strict
 
+    setTimeout(function () {
+        $('body').css('background-image', "url('/img/background.png')")
+    }, 250)
+
     // jQuery for page scrolling feature - requires jQuery Easing plugin
     $('a.page-scroll').bind('click', function(event) {
         var $anchor = $(this);
@@ -10,7 +14,7 @@
             scrollTop: ($($anchor.attr('href')).offset().top - 50)
         }, 1250, 'easeInOutExpo');
         event.preventDefault();
-    }); 
+    });
 
     // Highlight the top nav as scrolling occurs
     $('body').scrollspy({

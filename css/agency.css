@@ -8,7 +8,6 @@ h4 {
 }
 body {
   overflow-x: hidden;
-  background-image: url('/img/background.png');
   background-size: contain;
   background-attachment: fixed;
   background-position: 50% -5px;
