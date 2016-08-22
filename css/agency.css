@@ -591,6 +591,9 @@ section#team .ensure-height h4 {
 section#team .ensure-height-single {
   min-height: 80px;
 }
+section#team .red-person {
+  border: 5px solid #e74c3c !important;
+}
 section#team .red-people img {
   border: 5px solid #e74c3c;
 }
